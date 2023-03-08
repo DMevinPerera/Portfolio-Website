@@ -1,0 +1,769 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+body{
+    font-family:'Lato', sans-serif;
+}
+
+
+.navbar-brand{
+    margin-top: 20px;
+}
+.navbar a{
+    color: white;
+    margin-left: 0px;
+    font-size: 18px;
+    padding-left: 20px;
+}
+
+.navbar a:hover{
+    color: orange;
+}
+
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #00b7ff;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    transition: 0.5s;
+}
+
+a:hover::after{
+   width: 100%;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 40px;
+    margin-bottom: 0;
+    position: relative;
+
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+nav ul{
+    margin-bottom: 5px;
+}
+
+
+.myimage{
+    width: 100%;
+    height: 89vh;
+    background-image: url(bacground1.png);
+    background-size: cover;
+    background-position: center;
+}
+
+/*Hero Section*/
+.intro{
+    padding-top: 12%;
+    padding-left: 10%;
+}
+
+.text1{
+    font-size: 65px;
+    margin: 0px;
+    line-height: 75px;
+    color: #dcf0f7;
+    font-weight: 400;
+}
+
+.Name{
+    color:#00b7ff;
+}
+
+.text2{
+    font-size: 28px;
+    color: white;
+    font-weight: 100;
+}
+
+/*Scroll Down Arrow*/
+.home-section .scroll-down{
+    position: absolute;
+    left: 50%;
+    bottom: 30px;
+    height: 30px;
+    width: 30px;
+    margin-left: -15px;
+    animation: scrollDown 2s ease infinite;
+}
+
+@keyframes scrollDown{
+    0%,20%,50%,80%,100%{
+        transform: translateY(0);
+    }
+    40%{
+        transform: translateY(-30px);
+    }
+    60%{
+        transform: translateY(-15px);
+    }
+}
+.Hero .scroll-down img{
+    width: 25px;
+    display: block;
+}
+
+.Hero .scroll-down{
+    position: absolute;
+    left: 50%;
+    bottom: 30px;
+    height: 30px;
+    width: 30px;
+    margin-left: -15px;
+    animation: scrollDown 2s ease infinite;
+}
+
+@keyframes scrollDown{
+    0%,20%,50%,80%,100%{
+        transform: translateY(0);
+    }
+    40%{
+        transform: translateY(-30px);
+    }
+    60%{
+        transform: translateY(-15px);
+    }
+}
+.Hero .scroll-down img{
+    width: 25px;
+    display: block;
+}
+
+.image1{
+    filter: invert(100%);
+  -webkit-filter: invert(100%);
+}
+
+.profession{
+    color: white;
+    font-weight: 100;
+}
+
+
+
+
+
+
+
+/*About Section*/
+
+.background1{
+    background-color: black;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+.box{
+    position: absolute;
+   background-color: black;
+    margin-top: 150px;
+    margin-left: 50px;
+    margin-bottom: 100px;
+    width: 90%;
+}
+
+.row{
+    flex-wrap: wrap;
+    display: flex;
+}
+
+#aboutheading{
+    text-align: left;
+    font-size: 50px;
+    color: white;
+    font-weight: 700;
+    line-height: 30px;
+    color: #00b7ff;
+}
+
+#aboutmepara{
+    text-align: left;
+    color: white;
+}
+
+.tab-titles{
+display: flex;
+margin: 20px 0 40px;
+}
+
+.tab-titles p{
+    color: grey;
+}
+
+.tab-links{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 400;
+    cursor: pointer;
+    position: relative;
+}
+
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background:#00b7ff;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+
+.tab-links.active-link::after{
+    width: 50%;
+}
+
+.tab-titles{
+    margin-bottom: 0px;
+}
+
+label{
+    color: lightgray;
+}
+
+.tab-contents ul li{
+    list-style: none;
+    margin: 10px 0;
+    color: white;
+}
+
+.tab-contents ul li span{
+    color: #00b7ff;
+    font-size: 18px;
+}
+
+.tab-contents{
+    display: none;
+}
+
+.tab-contents.active-tab{
+    display: block;
+}
+
+
+/* Classes Section*/
+
+.background2{
+    background-color: black;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+#box2{
+    position: absolute;
+    background-color: black;
+    margin-top: 0px;
+    margin-bottom: 100px;
+    width: 100%;
+}
+
+.classheading p{
+    color:#00b7ff;
+    padding: 20px 0px 10px 0px;
+    font-weight: 700;
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+#box2 .padding{
+    padding-top: 30px;
+}
+
+
+
+/*Contact Details*/
+
+.background3{
+    background-color: black;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+#box3{
+    position: absolute;
+    background-color: black;
+     margin-top: 150px;
+     margin-bottom: 0px;
+     width: 100%;
+     
+}
+
+.contactme{
+    font-size: 50px;
+    color: white;
+    font-weight: 700;
+}
+
+
+.image2{
+    filter: invert(100%);
+  -webkit-filter: invert(100%);
+}
+
+
+.contactdetails p span{
+    color: white;
+    padding-left: 20px;
+    font-size: 15px;
+    display: inline-block;
+}
+
+.contactdetails p i{
+    color: #00b7ff;
+    font-size: 15px;
+}
+
+.socialicons a{
+    font-size: 32px;
+    padding-right: 10px;
+}
+
+.ending{
+    color: white;
+}
+
+
+/*reveal animated effect*/
+.reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: all 2s ease;
+
+}
+
+
+.reveal.active{
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+
+/*copyright*/
+
+footer{
+    position: relative;
+    color: grey;
+    min-height: 10px;
+    background-color: black;
+    margin-top: 10%;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+
+footer p{
+    text-align: center;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+
+
+.navbar .fa-solid{
+    display: none;
+}
+
+#msg{
+    color: white;
+    margin-top: 10px;
+    display: block;
+}
+
+
+/*--------------------------css for small screen-------------------*/
+@media only screen and (max-width: 600px) {
+    
+.myimage{
+    background-image: url(phonebackground.png); 
+}
+
+.text1{
+    font-size: 30px;
+    line-height: 30px;
+    
+}
+
+.text2{
+    font-size: 12px;
+    color: white;
+    font-weight: 100;
+}
+
+.box{
+    margin: 10px;
+    margin-top: 40px;
+    align-items: center;
+    justify-content: center;
+    margin-right: 0px;
+    height: 500px;
+}
+
+.background1{
+    height: 1100px;
+}
+
+.box .container-fluid{
+    padding-right: 0px;
+}
+
+
+.box.row{
+    margin-top: 30px;
+    margin: 0px;
+    justify-content: center;
+}
+
+.row{
+    justify-content: center;
+}
+
+.box .col-4{
+    width: 100%;
+}
+
+.box .col-4 img{
+    display: none;
+}
+
+.box .col-8{
+    width: 100%;
+}
+
+#aboutmepara{
+    text-align: justify;
+    color: white;
+}
+
+#aboutheading{
+    text-align: left;
+    font-size: 25px;
+}
+
+.tab-titles{
+    width: 100%;
+    align-items: center;
+    margin: 0px;
+    padding: 0px;
+    justify-content: center;
+}
+
+.tab-links{
+    margin-right: 30px;
+    font-size: 18px;
+    font-weight: 400;
+    cursor: pointer;
+    position: relative;
+}
+
+.forminsize{
+    margin-right: 0px;
+}
+
+.tab-contents{
+    width: 100%;
+}
+
+.classheading p{
+    font-size: 30px;
+    text-align: center;
+    
+}
+
+#box2 .col-3{
+    width: 100%;
+}
+
+#box2 .col-3 img{
+    padding-top: 10px;
+    width: 200px;
+}
+
+.background2{
+    height: 2050px;
+}
+
+#box2 .padding{
+    padding-top: 0px;
+}
+
+#box3 .col-4{
+    width: 100%;
+}
+
+#box3 .col-8{
+    width: 100%;
+}
+
+#box3{
+    margin-top: 20px;
+}
+
+.contactme{
+    font-size: 30px;
+    
+}
+
+.navbar .fa-solid{
+    display: block;
+    font-size: 25px;
+}
+
+.navbar ul{
+    background: #00b7ff;
+    position: fixed;
+    top: 0;
+    right: -200px;
+    width: 200px;
+    height: 100vh;
+    padding-top: 50px;
+    z-index: 2;
+}
+
+
+.navbar ul li{
+    display: block;
+    margin: 25px;
+
+}
+.navbar ul .fa-solid{
+
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    cursor: pointer;
+}
+
+.navbar-nav i{
+    color: white;
+}
+
+.background3 #box3s{
+    height: 100vh;
+    vertical-align: bottom;}
+
+}
+
+
+
+
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+    .myimage{
+        background-image: url(tabbackground.png); 
+    }
+
+    
+    .navbar a{
+        color: white;
+        margin-left: 0px;
+        font-size: 16px;
+        padding-left: 20px;
+    }
+
+    .box .col-4 img{
+        display: none;
+    }
+
+    .box .col-4{
+        width: 100%;
+    }
+
+    
+.box.row{
+    margin-top: 30px;
+    margin: 0px;
+    justify-content: center;
+}
+
+.row{
+    justify-content: center;
+}
+
+.box .col-4{
+    width: 100%;
+}
+
+.box .col-4 img{
+    display: none;
+}
+
+.box .col-8{
+    width: 100%;
+}
+
+#aboutmepara{
+    text-align: justify;
+    color: white;
+    size: 30px;
+}
+
+#aboutheading{
+    text-align: left;
+    font-size: 40px;
+}
+
+.tab-titles{
+    width: 100%;
+    margin: 0px;
+    padding-top: 20px;
+
+}
+
+.tab-links{
+    margin-right: 30px;
+    font-size: 18px;
+    font-weight: 400;
+    cursor: pointer;
+    position: relative;
+}
+
+
+.box{
+    margin: 10px;
+    margin-top: 40px;
+    align-items: center;
+    justify-content: center;
+    margin-right: 0px;
+    height: 500px;
+    width: auto;
+}
+
+.background1{
+    height: 900px;
+}
+
+.background2{
+    width: 100%;
+    justify-content: center;
+}
+
+
+
+#box2 .col-3{
+    width: 50%;
+}
+
+#box2 .col-3 img{
+    padding-top: 10px;
+    width: 300px;
+}
+
+.background2{
+    height: 1800px;
+}
+
+#box2 .padding{
+    padding-top: 0px;
+}
+
+}
+
+@media only screen and (min-width:768px) and (max-width: 900px) {
+
+    .navbar a{
+        color: white;
+        margin-left: 0px;
+        font-size: 14px;
+        padding-left: 1px;
+    }
+
+    .myimage{
+        background-image: url(tabbackground.png); 
+    }
+
+
+.box{
+    margin-top: 40px;
+    align-items: center;
+    justify-content: center;
+    margin-right: 0px;
+    height: 500px;
+    width: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: 0px;
+}
+
+#aboutmepara{
+    text-align: justify;
+    color: white;
+    size: 30px;
+}
+
+.background2{
+    width: 100%;
+    justify-content: center;
+}
+
+.box .col-4{
+    width: 100%;
+}
+
+.box .col-8{
+    width: 100%;
+}
+
+.box.row{
+    margin-top: 30px;
+    margin: 0px;
+    justify-content: center;
+}
+
+.row{
+    justify-content: center;
+}
+
+.box .col-4{
+    width: 100%;
+}
+
+.box .col-4 img{
+    display: none;
+}
+
+
+.background2{
+    width: 100%;
+    justify-content: center;
+}
+
+
+
+#box2 .col-3{
+    width: 50%;
+}
+
+#box2 .col-3 img{
+    padding-top: 10px;
+    width: 300px;
+}
+
+
+.background1{
+   height: 1000px;
+}
+
+.background2{
+    height: 1800px;
+ }
+
+
+
+
+}
+

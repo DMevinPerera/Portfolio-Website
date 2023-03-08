@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="stylesheet.css" />
+    <link href="jquery-ui-1.13.2/jquery-ui.css" rel="stylesheet">
+    <script src="Jquery.min.js"></script>
+    <script src="jquery-ui-1.13.2/jquery-ui.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;700&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/d2cd53ae26.js" crossorigin="anonymous"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">    
+<title>Document</title>
+</head>
+<body>
+    
+<!--Navigation Bar-->
+<nav class="navbar navbar-expand-lg bg-black">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="mylogopng.png" alt="Bootstrap" width="60" height="60">
+      </a>
+      <div class="navbar justify-content-end" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <ul id="sidemenu">
+          <li><a class="nav-link" aria-current="page" href="#">Home</a></li>
+          <li><a class="nav-link" href="#About">About</a></li>
+          <li><a class="nav-link" href="#Classes">Classes</a></li>
+          <li><a class="nav-link" href="#">Blog</a></li>
+          <li><a class="nav-link" href="#contact">Contact</a></li>
+          <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!--hero section-->
+  <section class="Hero">
+    <div class="myimage">
+        <div class="intro">
+        <p class="text1">Hi I'm <span class="Name">Mevin Perera</span></p>
+        <p class="text1">I'm a <span class="profession">UI/UX Designer</span></p>
+        <p class="text2">Scroll down to know more about me.</scan></p>
+    </div>
+    </div>
+
+<!-- scroll dowm -->
+<a href="#About" class="scroll-down">
+    <img class="image1" src="arrow.svg">
+</a>
+</section>
+
+<!-- About Section-->
+<section id="About">
+    <div class="background1">
+        <div class="box">
+            <div class="container-fluid text-center reveal">
+                <div class="row align-items-start">
+                  <div class="col-4">
+                    <img src="user.jpg" class="rounded-4" width="336px" height="448px">
+                  </div>
+                  <div class="col-8">
+                    <p id="aboutheading">About Me</p>
+                    <p id="aboutmepara">Hello! My name is Mevin Perera and I am a 22-year-old student currently studying software engineering. I am deeply passionate about the world of full stack development and am constantly seeking new opportunities to expand my knowledge in this field. In addition to my studies, I also work part-time as an ICT teacher for students, which has allowed me to develop my communication skills and share my love for technology with others. When I'm not coding or teaching, you can usually find me exploring new cafes, reading books, or catching up on my favorite TV shows. I am excited for what the future holds and can't wait to see where my passion for technology takes me!</p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                    <p class="tab-links forminsize" onclick="opentab('mywork')">My Work</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <div class="container">
+                    <div class="row">
+                    <div class="col-lg-6">
+                    <div class="mb-3">
+                        <label>HTML & CSS</label>
+                        <div class="progress" style="height: 10px;">
+                            <div class="progress-bar bg-info" style="width: 90%"  role="progressbar" aria-valuenow="90%"
+                            aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label>Javascript</label>
+                        <div class="progress" style="height: 10px;">
+                            <div class="progress-bar bg-info" style="width: 75%" role="progressbar" aria-valuenow="75%"
+                            aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label>jQuery</label>
+                        <div class="progress" style="height: 10px;">
+                            <div class="progress-bar bg-info" style="width: 60%" role="progressbar" aria-valuenow="60"
+                            aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label>Bootstrap</label>
+                        <div class="progress" style="height: 10px;">
+                            <div class="progress-bar bg-info" style="width: 60%" role="progressbar" aria-valuenow="60"
+                            aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label>React</label>
+                        <div class="progress" style="height: 10px;">
+                            <div class="progress-bar bg-info" style="width: 50%" role="progressbar" aria-valuenow="50"
+                            aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="col-lg-6">
+                    <div class="mb-3 pro">
+                        <label>Adobe Photoshop/ Illustrator/ Indesign</label>
+                        <div class="progress" style="height: 10px;">
+                            <div class="progress-bar bg-info" style="width: 90%" role="progressbar" aria-valuenow="95"
+                            aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="mb-3 pro">
+                        <label>Node.js</label>
+                        <div class="progress" style="height: 10px;">
+                            <div class="progress-bar bg-info" style="width: 65%" role="progressbar" aria-valuenow="65"
+                            aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="mb-3 pro">
+                        <label>MySQL / MongoDB</label>
+                        <div class="progress" style="height: 10px;">
+                            <div class="progress-bar bg-info" style="width: 60%" role="progressbar" aria-valuenow="60"
+                            aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="mb-3 pro">
+                        <label>C++ / C</label>
+                        <div class="progress" style="height: 10px;">
+                            <div class="progress-bar bg-info" style="width: 80%" role="progressbar" aria-valuenow="80"
+                            aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="mb-3 pro">
+                        <label>Python</label>
+                        <div class="progress" style="height: 10px;">
+                            <div class="progress-bar bg-info" style="width: 80%" role="progressbar" aria-valuenow="80"
+                            aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                </div>
+                </div>
+
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2018</span><br>Diploma in Graphic Design</li>
+                        <li><span>2021 - Now</span><br>CA Level 2 (Reading)</li>
+                        <li><span>2020 - 2024</span><br>BSc Hons in Software Engineering (Sabaragamuwa University of Sri Lanka)</li> 
+                    </ul>
+                </div>
+                <div class="tab-contents" id="mywork">
+                    <ul>
+                        <li><span>GitHub</span><br><a href="https://github.com/DMevinPerera">https://github.com/DMevinPerera</a></li>
+                    </ul>
+                </div>
+              </div>
+        </div>
+    </div>
+
+
+
+
+</section>
+
+<!--Classes Section-->
+    
+<section id="Classes">
+    <div class="background2">
+        <div class="classheading">
+            <p>My Class Times</p>
+        </div>
+        <div id="box2">
+        <div class="container text-center reveal">
+            <div class="row">
+              <div class="col-3 col-sm-3">
+                <img src="grade6.png" width="250px">
+              </div>
+              <div class="col-3 col-sm-3">
+                <img src="grade7.png" width="250px">
+              </div>
+              <div class="col-3 col-sm-3">
+                <img src="grade8.png" width="250px">
+              </div>
+              <div class="col-3 col-sm-3">
+                <img src="grade9.png" width="250px">
+              </div>
+          
+              <!-- Force next columns to break to new line -->
+              <div class="w-100"></div>
+          
+              <div class="col-3 col-sm-3 padding">
+                <img src="grade10.png" width="250px">
+              </div>
+              <div class="col-3 col-sm-3 padding">
+                <img src="grade11.png" width="250px">
+              </div>
+              <div class="col-3 col-sm-3 padding">
+                <img src="gradeal.png" width="250px">
+              </div>
+              <div class="col-3 col-sm-3 padding">
+                <img src="enquirydetails.png" width="250px">
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+</section>
+
+<!--Contact Details-->
+<section id="contact">
+    <div class="background3">
+    <div id="box3">
+    <div class="container text-start reveal">
+        <div class="row align-items-start">
+          <div class="col-4">
+            <p class="contactme">Contact Me</p>
+            <div class="contactdetails">
+            <p>
+                <i class="fa-solid fa-phone"></i><span>076-7364349</span>
+            </p>
+            <p>
+                <i class="fa-solid fa-envelope"></i><span>dulanya2001@gmail.com</span>
+            </p>
+            </div>
+            <div class="socialicons">
+                <a href="https://www.facebook.com/profile.php?id=100089812435475"><i class="fa-brands fa-square-facebook"></i></a>
+                <a href="https://www.instagram.com/me_vi_n/"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://twitter.com/Mevin_Perera"><i class="fa-brands fa-square-twitter"></i></a>
+                <a href="https://www.linkedin.com/in/mevin-perera-228206208/"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+          </div>
+          <div class="col-8 mt-4">
+            <form name="submit-to-google-sheet">
+                <div class="mb-3">
+                  <label for="exampleInputName1" class="form-label">Name</label>
+                  <input type="name" class="form-control bg-dark-subtle border-0" name="Name" id="exampleInputEmail1" aria-describedby="nameHelp">
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputPassword1" class="form-label">Contact Number</label>
+                  <input type="contact" class="form-control bg-dark-subtle border-0" name="Number">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputComment1" class="form-label">Message</label>
+                    <textarea class="form-control bg-dark-subtle border-0" name="Comment" id="exampleFormControlTextarea1" rows="5"></textarea>
+                  </div>
+                
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
+              <span id="msg"></span>
+          </div>
+          
+        </div>
+      </div>
+      <footer>
+        <p>Designed by Mevin Perera</p>
+      </footer>
+    </div>
+   
+    </div>
+    </div>
+    
+
+
+</section>
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+    <script type="text/javascript">
+       
+       var tablinks = document.getElementsByClassName("tab-links");
+       var tabcontents = document.getElementsByClassName("tab-contents");
+       function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+       }
+
+      /*reveal animated effect*/
+
+       window.addEventListener('scroll',reveal);
+
+       function reveal(){
+        var reveals = document.querySelectorAll('.reveal');
+
+        for(var i=0; i<reveals.length; i++){
+
+          var windowheight = window.innerHeight;
+          var revealtop = reveals[i].getBoundingClientRect().top;
+          var revealpoint = 150;
+
+
+          if(revealtop<windowheight - revealpoint){
+            reveals[i].classList.add('active');
+          }
+
+          else{
+            reveals[i].classList.remove('active');
+          }
+        }
+       }
+    
+       /*animated text changing*/
+var typed = new Typed(".profession", {
+  strings: ["UI/UX Designer", "Developer","Teacher", "Blogger"],
+  typeSpeed:150,
+  backSpeed: 150,
+  loop:true
+})
+
+    var sidemenu=document.getElementById("sidemenu");
+
+    function openmenu(){
+      sidemenu.style.right = "0";
+    }
+
+    function closemenu(){
+      sidemenu.style.right = "-200px";
+    }
+        </script>
+
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbyOMv1dF3YhWDMMcu9LKPDoctEHHvkOX9luEdf36RfgUi7dYukCI4Alq5At2z1fVjF1Gw/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById("msg")
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML = "Message sent successfully"
+        setTimeout(function(){
+          msg.innerHTML=""
+        },5000)
+        form.reset();
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+</body>
+</html>
